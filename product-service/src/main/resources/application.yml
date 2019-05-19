@@ -1,0 +1,11 @@
+server:
+  port: 65002
+
+spring:
+  application:
+    name: product-service
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:65000/eureka

@@ -1,0 +1,31 @@
+server:
+  port: 65000
+
+spring:
+  application:
+    name: eureka-service
+
+eureka:
+  instance:
+    hostname: localhost
+  client:
+    register-with-eureka: false
+    fetch-registry: false
+
+#swagger:
+#  keeper:
+#    auto-generate-from-zuul-routes: true
+#  #swagger.butler.ignore-routes=eureka-client,system-service,service-zuul
+#  generate-routes: product-service, customer-service
+#  resources:
+#    product-service:
+#      api-docs-path: /xxx/v2/api-docs
+#
+## enable eureka
+#  eureka.client.service-url.defaultZone=http://eureka.didispace.com/eureka/
+#
+#  swagger.butler.auto-generate-from-zuul-routes=true
+#  #swagger.butler.ignore-routes=eureka-client,system-service,service-zuul
+#  swagger.butler.generate-routes=swagger-service-a, swagger-service-b
+#
+#  swagger.butler.resources.swagger-service-b.api-docs-path=/xxx/v2/api-docs
